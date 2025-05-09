@@ -520,6 +520,61 @@ Where \( E \) is the expected accuracy by chance.
 
 
 ---
+# 📁 Repository Structure
+```
+## 📁 Repository Structure
+
+├── README.md                                      # Full documentation for all assignments
+
+├── Assignment_1_Trapezi_Ergasias_24/              # Assignment 1: Linear and Fuzzy Controllers
+│   ├── Instructions/                              # Instructions and assignment guidelines
+│   │   └── Instructions.pdf
+│   ├── Matlab Code/                               # MATLAB scripts for PI and Fuzzy Controller
+│   │   ├── pi_controller.m
+│   │   ├── fuzzy_pi_controller.m
+│   │   ├── hybrid_controller.m
+│   │   └── tuning_results.m
+│   ├── FIS Model/                                 # Fuzzy Inference System (.fis) files
+│   │   └── fuzzy_pi_model.fis
+│   ├── Simulink/                                  # Simulink files for simulation
+│   │   └── workbench_model.slx
+│   └── Report_Trapezi_Ergasias_24.pdf             # Detailed report for Assignment 1
+
+├── Assignment_2_Car_Control_E/                     # Assignment 2: Fuzzy Logic Controller (Steering)
+│   ├── Instructions/                               # Assignment instructions
+│   │   └── Instructions.pdf
+│   ├── Matlab Code/                                # MATLAB scripts for car control simulation
+│   │   ├── car_control_model.m
+│   │   ├── vehicle_simulation.m
+│   │   └── plot_paths.m
+│   ├── FIS Model/                                  # Fuzzy logic controller model
+│   │   └── fuzzy_steering.fis
+│   ├── Simulink/                                   # Simulink models for steering system
+│   │   └── fuzzy_steering_system.slx
+│   └── Report_Car_Control_E.pdf                    # Detailed report for Assignment 2
+
+├── Assignment_3_Regression/                         # Assignment 3: High-Dimensional Regression
+│   ├── Instructions/                                # Assignment guidelines
+│   │   └── Instructions.pdf
+│   ├── Matlab Code/                                 # MATLAB scripts for regression analysis
+│   │   ├── TSK_Regression_1stPart.m
+│   │   ├── TSK_Regression_2ndPart.m
+│   │   ├── split_scale.m
+│   │   └── metrics_functions.m
+│   └── Report_Regression.pdf                        # Detailed report for Assignment 3
+
+├── Assignment_4_Classification/                     # Assignment 4: High-Dimensional Classification
+│   ├── Instructions/                                # Assignment guidelines
+│   │   └── Instructions.pdf
+│   ├── Matlab Code/                                 # MATLAB scripts for classification tasks
+│   │   ├── classification_haberman.m
+│   │   ├── classification_epileptic.m
+│   │   ├── OvAcc.m
+│   │   ├── UsAcc.m
+│   │   └── KCoef.m
+│   └── Report_Classification.pdf                    # Detailed report for Assignment 4
+```
+---
 
 ## 🤝 Contributors
 - [Ioannis Deirmentzoglou](https://github.com/jonnyderme)
