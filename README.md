@@ -64,6 +64,31 @@ Electronics and Computers Department
 
 ---
 
+## 🎯 Goals
+
+### Assignment 1: Linear and Fuzzy Controllers
+- Develop a **Proportional-Integral (PI)** controller for precise velocity control in high-accuracy mechanisms.
+- Design and compare a **Fuzzy PI (FZ-PI)** controller with the linear PI controller.
+- Evaluate the controllers on overshoot, rise time, and overall performance.
+
+### Assignment 2: Fuzzy Logic Controller (FLC)
+- Create an FLC to safely navigate a vehicle through obstacles to a target.
+- Define rule bases and membership functions using MATLAB’s Fuzzy Logic Designer.
+- Simulate and visualize the vehicle's trajectory for varying scenarios.
+
+### Assignment 3: High-Dimensional Regression with TSK Models
+- Model regression tasks using four distinct TSK models with varying membership functions and output types.
+- Optimize parameters through hybrid methods, combining backpropagation and least squares.
+- Compare performance metrics such as RMSE, NMSE, and \( R^2 \).
+
+### Assignment 4: High-Dimensional Classification with TSK Models
+- Address classification problems with datasets of high dimensionality.
+- Utilize **Subtractive Clustering (SC)** to generate rules and reduce complexity.
+- Perform grid search optimization to determine the best parameters for TSK models.
+- Compare performance metrics such as Overall Accuracy (OA), Producer’s Accuracy (PA), and User’s Accuracy (UA).
+
+---
+
 ## 📖 Overview
 This repository contains four distinct assignments completed as part of the Computational Intelligence course at Aristotle University of Thessaloniki. Each assignment applies different computational intelligence methods, demonstrating their capabilities and performance in control, modeling, classification, and regression tasks.
 
