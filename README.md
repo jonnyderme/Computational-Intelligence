@@ -29,6 +29,44 @@ Electronics and Computers Department
 - [🤖 Assignment 4: Classification Using TSK Models](#-assignment-4-classification-using-tsk-models)
 - [📂 Repository Structure](#-repository-structure)
 
+## 📚 Table of Contents
+
+### 🤖 Assignment 1: Control of a Workbench Mechanism
+- [🎯 Objective](#-objective)
+- [🧠 Theoretical Foundations](#-theoretical-foundations)
+  - [🔧 Linear PI Controller](#-linear-pi-controller)
+  - [🌫️ Fuzzy PI Controller](#-fuzzy-pi-controller)
+- [⚙️ Implementation in MATLAB/Simulink](#-implementation-in-matlabsimulink)
+- [📈 Key Results](#-key-results)
+- [📘 Insights](#-insights)
+
+### 🤖 Assignment 2: Intelligent Steering System
+- [🎯 Objective](#-objective-1)
+- [📝 Problem Description](#-problem-description)
+- [🧠 Fuzzy System Design](#-fuzzy-system-design)
+- [🛠️ System Setup](#-system-setup)
+- [📈 Fine-Tuning](#-fine-tuning)
+- [📊 Results](#-results)
+- [📘 Observations](#-observations)
+
+### 🤖 Assignment 3: High-Dimensional Regression with TSK Models
+- [🎯 Objective](#-objective-2)
+- [🧠 Theoretical Background](#-theoretical-background)
+- [🛠️ Implementation](#-implementation)
+  - [Airfoil Self-Noise Dataset](#-airfoil-self-noise-dataset)
+  - [Superconductivity Dataset](#-superconductivity-dataset)
+- [📊 Key Results](#-key-results-1)
+- [📘 Observations](#-observations-1)
+- [📂 Files](#-files)
+
+### 🤖 Assignment 4: Classification Using TSK Models
+- [🎯 Objective](#-objective-3)
+- [🧠 Theoretical Foundations](#-theoretical-foundations-1)
+- [🖥️ Part 1: Haberman Dataset](#️-part-1-haberman-dataset)
+- [🖥️ Part 2: Epileptic Seizure Dataset](#️-part-2-epileptic-seizure-dataset)
+- [📈 Conclusions](#-conclusions)
+- [📂 Files](#-files-1)
+
 ---
 
 ## 📖 Overview
