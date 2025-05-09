@@ -42,7 +42,7 @@ The assignments cover:
 
 ---
 
-# 🤖 Computational Intelligence – Assignment 1
+# 🤖 Assignment 1: Linear and Fuzzy Controllers
 
 ### 📌 Title: Control of a Workbench Mechanism with Fuzzy Logic Controllers  
 ---
@@ -55,7 +55,7 @@ This assignment aims to design, simulate, and optimize a **speed control system*
 
 The key objective is to track a desired reference signal with high accuracy while ensuring robustness against external disturbances. The study is conducted in **MATLAB** using **Simulink**, the **Fuzzy Logic Toolbox**, and the **Control System Toolbox**.
 
----
+
 
 ## 📚 Theoretical Foundations
 
@@ -73,7 +73,7 @@ Controller tuning was performed using classical control theory and MATLAB’s Co
 - Set 1: \( K_p = 2.5, K_i = 0.25 \)
 - Set 2 (tuned): \( K_p = 2.65, K_i = 0.125 \)
 
----
+
 
 ### 🌫️ Fuzzy PI Controller
 
@@ -94,7 +94,7 @@ Controller tuning was performed using classical control theory and MATLAB’s Co
 - \( a = 0.25 \)
 - \( K = 12 \)
 
----
+
 
 ## ⚙️ Implementation in MATLAB/Simulink
 
@@ -104,7 +104,7 @@ Controller tuning was performed using classical control theory and MATLAB’s Co
 - **Step 4**: Tuning via trial and error for optimal transient response
 - **Step 5**: Analysis across different reference input profiles (step and ramp)
 
----
+
 
 ## 📈 Key Results
 
@@ -118,7 +118,6 @@ Controller tuning was performed using classical control theory and MATLAB’s Co
 - The COS defuzzification method contributes to smooth control output.
 - Performance improved with ramp input profile (scenario 2), demonstrating robustness.
 
----
 
 ## 🔍 Comparative Analysis
 
@@ -130,7 +129,6 @@ Controller tuning was performed using classical control theory and MATLAB’s Co
 | Adaptability           | Limited           | High                       |
 | Complexity             | Low               | Higher (rules, fuzzification) |
 
----
 
 ## 📘 Observations
 
@@ -143,10 +141,14 @@ FLC is particularly advantageous in scenarios where system modeling is imprecise
 
 ---
 
-# 🤖 Computational Intelligence – Assignment 2  
+
+
+
+
+# 🤖 Assignment 2: Fuzzy Logic Controller (FLC)  
 ### 📌 Title: Intelligent Steering System for Obstacle Avoidance using Fuzzy Logic  
 
----
+
 
 ## 🎯 Objective
 
@@ -154,7 +156,7 @@ Develop a fuzzy logic controller that governs a vehicle’s **steering angle (Δ
 
 The system is simulated in **MATLAB Simulink**, where both the fuzzy inference system (FIS) and the motion dynamics of the vehicle are modeled in a closed-loop control architecture.
 
----
+
 
 ## 📘 Problem Description
 
@@ -167,7 +169,7 @@ The system is simulated in **MATLAB Simulink**, where both the fuzzy inference s
 
 These inputs are processed by a **fuzzy controller** to determine the steering change `Δθ`.
 
----
+
 
 ## 🧠 Theoretical Background
 
@@ -189,7 +191,7 @@ A fuzzy system is ideal for real-world control where crisp thresholds are limiti
 > `If dH is Very Small and θ is ZE then Δθ is PL`  
 > → The car is approaching a wall head-on → turn strongly right.
 
----
+
 
 ## 🛠️ System Implementation
 
@@ -207,7 +209,7 @@ A fuzzy system is ideal for real-world control where crisp thresholds are limiti
 - Final steering angle range: `[-130°, +130°]`
 - Time step: `0.1s` with delay for realistic motion feedback
 
----
+
 
 ## 📈 Tuning Process
 
@@ -216,7 +218,7 @@ To improve accuracy:
 - Trapezoidal function for `Very Large` extended to 1.0m
 - This tuning enhances control near walls and ensures the car reaches the exact goal
 
----
+
 
 ## 📊 Simulation Results
 
@@ -230,7 +232,7 @@ To improve accuracy:
 - Car adjusts steering in response to both lateral and frontal sensor data.
 - Zoomed-in plots verify **collision-free motion at corners**.
 
----
+
 
 ## 📘 Observations
 
@@ -241,11 +243,11 @@ To improve accuracy:
 
 ---
 
-# 🤖 Computational Intelligence – Assignment 3
+# 🤖 Assignment 3: High-Dimensional Regression with TSK Models
 
 ### 📈 Title: High-Dimensional Regression with TSK Models
 
----
+
 
 ## 🎯 Objective
 
@@ -257,7 +259,7 @@ The goal of this assignment is to **solve regression problems using Takagi–Sug
 2. **High-Dimensional Dataset:**  
    Application on the Superconductivity dataset using **feature selection** and **subtractive clustering** to reduce model complexity.
 
----
+
 
 ## 🧠 Theoretical Background
 
@@ -273,7 +275,6 @@ The models are evaluated with these metrics:
 
 - **NDEI (Normalized Deviation Index):** NDEI = sqrt(NMSE)
 
----
 
 ## 🛠️ Implementation
 
@@ -292,7 +293,6 @@ The models are evaluated with these metrics:
 - **Tools:**  
   MATLAB ANFIS, grid partitioning, and evaluation via metrics above.
 
----
 
 ### Part 2: Superconductivity Dataset
 
@@ -307,7 +307,6 @@ The models are evaluated with these metrics:
 
 - **Objective:** Find the **optimal grid point** (best combo of features & cluster radius) to minimize RMSE.
 
----
 
 ## 📊 Key Results
 
@@ -327,7 +326,7 @@ For the **Superconductivity dataset:**
   - Cluster radius: 0.4  
   - Achieved **R² ~ 0.80** with RMSE ~15.3
 
----
+
 
 ## 📘 Observations
 
@@ -336,18 +335,13 @@ For the **Superconductivity dataset:**
 - **Subtractive clustering** is key to manage high-dimensional data effectively.
 - Trade-off between **accuracy and overfitting:** Very small cluster radii may overfit.
 
+
+
 ---
 
-# 🤖 Computational Intelligence – Assignment 4
+# 🤖 Assignment 4: High-Dimensional Classification with TSK Models
 
 ### 🗂️ Title: Classification Using TSK Models (Takagi-Sugeno-Kang)
-
-📅 Semester: Spring 2023–2024  
-🏛️ Institution: AUTh – School of Electrical and Computer Engineering  
-📚 Course: Computational Intelligence  
-👨‍💻 Student: Ioannis Deirmentzoglou (AEM: 10015)
-
----
 
 ## 🎯 Objective
 
@@ -358,7 +352,6 @@ This assignment focuses on solving **classification problems** using **TSK fuzzy
 
 The goal was to train TSK models using **Subtractive Clustering** and optimize them via **grid search** to balance model complexity with classification accuracy.
 
----
 
 ## 🧠 Theoretical Foundations
 
@@ -415,7 +408,6 @@ K̂ = \frac{OA - E}{1 - E}
 \]
 Where \( E \) is the expected accuracy by chance.
 
----
 
 ## 🖥️ Part 1: Haberman Dataset
 
@@ -439,7 +431,6 @@ Where \( E \) is the expected accuracy by chance.
 - Higher radius → simpler model, often better OA.
 - Class-Dependent clustering improved performance for minority classes.
 
----
 
 ## 🖥️ Part 2: Epileptic Seizure Dataset
 
@@ -461,7 +452,7 @@ Where \( E \) is the expected accuracy by chance.
 - Class 5 showed persistently low UA (<1%), indicating class imbalance and feature overlap.
 - High OA achieved mainly via strong performance in dominant classes.
 
----
+
 
 ## 📈 Conclusions
 
@@ -469,4 +460,11 @@ Where \( E \) is the expected accuracy by chance.
 - Class-Dependent clustering is **beneficial** in imbalanced datasets.
 - For high-dimensional data, **dimensionality reduction** and careful tuning are essential.
 
+
 ---
+
+## 🤝 Contributors
+- [Ioannis Deirmentzoglou](https://github.com/jonnyderme)
+
+---
+
