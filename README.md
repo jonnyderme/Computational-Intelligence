@@ -122,7 +122,7 @@ Controller tuning was performed using classical control theory and MATLAB’s Co
 
 ---
 
-## 📘 Conclusion
+## 📘 Observations
 
 The **Fuzzy PI Controller** demonstrates superior adaptability and comparable response characteristics compared to the classical PI controller. With careful gain tuning, the fuzzy approach can yield:
 - Lower overshoot
@@ -130,5 +130,108 @@ The **Fuzzy PI Controller** demonstrates superior adaptability and comparable re
 - Enhanced robustness to disturbances and input profile variability
 
 FLC is particularly advantageous in scenarios where system modeling is imprecise or operating conditions are non-linear.
+
+---
+
+# 🤖 Computational Intelligence – Assignment 2  
+### 🚘 Intelligent Steering System for Obstacle Avoidance using Fuzzy Logic  
+
+📅 Semester: Spring 2023–2024  
+🏛️ Institution: AUTh – School of Electrical and Computer Engineering  
+📚 Course: Computational Intelligence  
+👨‍💻 Student: Ioannis Deirmentzoglou (AEM: 10015)  
+
+---
+
+## 🎯 Objective
+
+Develop a fuzzy logic controller that governs a vehicle’s **steering angle (Δθ)** based on proximity sensor input, allowing it to navigate autonomously from a start point to a goal while avoiding static obstacles.
+
+The system is simulated in **MATLAB Simulink**, where both the fuzzy inference system (FIS) and the motion dynamics of the vehicle are modeled in a closed-loop control architecture.
+
+---
+
+## 📘 Problem Description
+
+- The car starts from a fixed point `(4, 0.4)` with varying initial angles: `0°`, `-45°`, and `-90°`.
+- The goal is to reach `(10, 3.2)` while avoiding contact with walls and obstacles.
+- The car is equipped with sensors measuring:
+  - **Horizontal distance** to obstacles (`dH`)
+  - **Vertical distance** to obstacles (`dV`)
+  - **Orientation angle** (`θ`) relative to horizontal axis
+
+These inputs are processed by a **fuzzy controller** to determine the steering change `Δθ`.
+
+---
+
+## 🧠 Theoretical Background
+
+### 🌫️ Fuzzy Logic Principles
+
+A fuzzy system is ideal for real-world control where crisp thresholds are limiting. This implementation uses:
+
+- **Input variables** (`dH`, `dV`, `θ`) fuzzified into 5 linguistic terms each (e.g., Very Small, Medium, etc.)
+- **Output variable** (`Δθ`) also mapped to 5 fuzzy sets
+- A **Fuzzy Rule Base** of 30 rules drives decision-making
+
+### 🧾 Rule Formation Strategy
+
+- `dH` governs directional control to avoid frontal collisions.
+- `dV` ensures lateral spacing from walls.
+- Combined with `θ`, rules drive orientation correction when necessary.
+
+> Example:  
+> `If dH is Very Small and θ is ZE then Δθ is PL`  
+> → The car is approaching a wall head-on → turn strongly right.
+
+---
+
+## 🛠️ System Implementation
+
+### 🧩 Modules
+
+- **FIS Design:** Implemented using MATLAB's *FIS Editor* and saved as `.fis` file.
+- **Vehicle Model:** Simulink model that integrates the fuzzy controller with car motion logic.
+- **Control Function (`car_control_model`)**:
+  - Updates state: position `(x, y)`, orientation `θ`, and distances `dV`, `dH`
+  - Handles angular transformations and normalization
+
+### ⚙️ Control Architecture
+
+- Normalized input range: `[-1, 1]`
+- Final steering angle range: `[-130°, +130°]`
+- Time step: `0.1s` with delay for realistic motion feedback
+
+---
+
+## 📈 Tuning Process
+
+To improve accuracy:
+- `Small` distance fuzzy set for `dV` redefined to peak at **0.2m** instead of 0.25m
+- Trapezoidal function for `Very Large` extended to 1.0m
+- This tuning enhances control near walls and ensures the car reaches the exact goal
+
+---
+
+## 📊 Simulation Results
+
+| Initial Angle | Final Distance to Target | Behavior Summary                          |
+|---------------|--------------------------|-------------------------------------------|
+| `θ = 0°`      | ~2.5 cm                  | Smooth approach, avoids corners           |
+| `θ = -45°`    | ~3.2 cm                  | Aggressive turn followed by smooth merge  |
+| `θ = -90°`    | ~4.1 cm                  | Sideward correction, converges gradually  |
+
+- Paths are smooth and obstacle-free.
+- Car adjusts steering in response to both lateral and frontal sensor data.
+- Zoomed-in plots verify **collision-free motion at corners**.
+
+---
+
+## 📘 Observations
+
+- Fuzzy controller is **generalizable across initial conditions**.
+- The system exhibits **resilience to heading variations**.
+- Lack of diagonal sensor data slightly impacts accuracy at step corners.
+- After tuning, deviation from the goal is negligible.
 
 ---
