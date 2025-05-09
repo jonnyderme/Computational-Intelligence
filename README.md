@@ -4,10 +4,6 @@ Assignments for the "Computational Intelligence" Course Faculty of Engineering, 
 
 ---
 
-# 💻 Computational Intelligence
-
----
-
 ### Assignments for "Computational Intelligence" Coursework (2023)
 Assignment for the "Computational Intelligence" Course  
 Faculty of Engineering, AUTh  
