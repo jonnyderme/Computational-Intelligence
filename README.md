@@ -22,50 +22,49 @@ Electronics and Computers Department
 
 ## 📚 Table of Contents
 
-- [📖 Overview](#-overview)
-- [🤖 Assignment 1: Workbench Control with Fuzzy Logic](#-assignment-1-workbench-control-with-fuzzy-logic)
-- [🤖 Assignment 2: Intelligent Vehicle Steering with Fuzzy Logic](#-assignment-2-intelligent-vehicle-steering-with-fuzzy-logic)
-- [🤖 Assignment 3: High-Dimensional Regression with TSK Models](#-assignment-3-high-dimensional-regression-with-tsk-models)
-- [🤖 Assignment 4: Classification Using TSK Models](#-assignment-4-classification-using-tsk-models)
-- [📂 Repository Structure](#-repository-structure)
-
-## 📚 Table of Contents
-
-### 🤖 Assignment 1: Control of a Workbench Mechanism
+### 🤖 Assignment 1: Linear and Fuzzy Controllers
 - [🎯 Objective](#-objective)
-- [🧠 Theoretical Foundations](#-theoretical-foundations)
+- [📚 Theoretical Foundations](#-theoretical-foundations)
   - [🔧 Linear PI Controller](#-linear-pi-controller)
   - [🌫️ Fuzzy PI Controller](#-fuzzy-pi-controller)
 - [⚙️ Implementation in MATLAB/Simulink](#-implementation-in-matlabsimulink)
 - [📈 Key Results](#-key-results)
-- [📘 Insights](#-insights)
-
-### 🤖 Assignment 2: Intelligent Steering System
-- [🎯 Objective](#-objective-1)
-- [📝 Problem Description](#-problem-description)
-- [🧠 Fuzzy System Design](#-fuzzy-system-design)
-- [🛠️ System Setup](#-system-setup)
-- [📈 Fine-Tuning](#-fine-tuning)
-- [📊 Results](#-results)
+- [🔍 Comparative Analysis](#-comparative-analysis)
 - [📘 Observations](#-observations)
+
+### 🤖 Assignment 2: Fuzzy Logic Controller (FLC)
+- [🎯 Objective](#-objective-1)
+- [📘 Problem Description](#-problem-description)
+- [🧠 Theoretical Background](#-theoretical-background)
+  - [🌫️ Fuzzy Logic Principles](#-fuzzy-logic-principles)
+  - [🧾 Rule Formation Strategy](#-rule-formation-strategy)
+- [🛠️ System Implementation](#-system-implementation)
+  - [🧩 Modules](#-modules)
+  - [⚙️ Control Architecture](#-control-architecture)
+- [📈 Tuning Process](#-tuning-process)
+- [📊 Simulation Results](#-simulation-results)
+- [📘 Observations](#-observations-1)
 
 ### 🤖 Assignment 3: High-Dimensional Regression with TSK Models
 - [🎯 Objective](#-objective-2)
-- [🧠 Theoretical Background](#-theoretical-background)
+- [🧠 Theoretical Background](#-theoretical-background-1)
 - [🛠️ Implementation](#-implementation)
-  - [Airfoil Self-Noise Dataset](#-airfoil-self-noise-dataset)
-  - [Superconductivity Dataset](#-superconductivity-dataset)
+  - [Part 1: Airfoil Self-Noise Dataset](#part-1-airfoil-self-noise-dataset)
+  - [Part 2: Superconductivity Dataset](#part-2-superconductivity-dataset)
 - [📊 Key Results](#-key-results-1)
-- [📘 Observations](#-observations-1)
-- [📂 Files](#-files)
+- [📘 Observations](#-observations-2)
 
-### 🤖 Assignment 4: Classification Using TSK Models
+### 🤖 Assignment 4: High-Dimensional Classification with TSK Models
 - [🎯 Objective](#-objective-3)
-- [🧠 Theoretical Foundations](#-theoretical-foundations-1)
+- [🧠 Theoretical Foundations](#-theoretical-foundations-2)
+  - [📊 TSK Model Structure](#-tsk-model-structure)
+  - [🛠 Training Process](#-training-process)
 - [🖥️ Part 1: Haberman Dataset](#️-part-1-haberman-dataset)
+  - [🔎 Key Findings](#-key-findings)
 - [🖥️ Part 2: Epileptic Seizure Dataset](#️-part-2-epileptic-seizure-dataset)
+  - [🔎 Best Result](#-best-result)
 - [📈 Conclusions](#-conclusions)
-- [📂 Files](#-files-1)
+
 
 ---
 
